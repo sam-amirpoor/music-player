@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+
+    <link rel="stylesheet" href="fonts/awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="modal">
+        <p class="modal__content"></p>
+        <button class="modal__button">OK</button>
+    </div>
+
+    <ul class="music-list">
+        
+        <i class="fa fa-times music-list__close-btn"></i>
+
+    </ul>
+
+    <audio src=""></audio>
+
+    <main class="main">
+
+        <i class="fa fa-bars menu-btn menu-btn--active"></i>
+
+        <div class="music-box">
+            <img src="" class="music-box__cover" deaggable="false" />
+
+            <h1 class="music-box__name"></h1>
+            <h4 class="music-box__artist"></h4>
+
+            <div class="music-box__controls">
+                <i class="fa fa-backward music-box__controls-icon" id="previous"></i>
+                <i class="fa fa-play music-box__controls-icon" id="play"></i>
+                <i class="fa fa-forward music-box__controls-icon" id="next"></i>
+            </div>
+
+            <div class="music-box__time">
+                
+                <div class="music-box__time-value">
+                    <span class="music-box__time-line-currently-time">00:00</span>
+                <span class="music-box__time-line-full-time">00:00</span>
+                </div>
+
+                <div class="music-box__time-line-progress-bar">
+                    <div class="music-box__time-line-progress-percent"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
